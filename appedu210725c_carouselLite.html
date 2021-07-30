@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jCarouselLite-旋轉木馬</title>
+	<link rel="stylesheet" href="css\appedu210725c.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#carousel").jCarouselLite({
+				auto:1200,
+				scroll:1,
+				visible:3,
+				speed:600,
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div id="carousel">
+			<ul>
+				<li><img src="img/facebook.png" alt=""></li>
+				<li><img src="img/instagram.png" alt=""></li>
+				<li><img src="img/twitter.png" alt=""></li>				
+			</ul>
+		</div>		
+	</header>
+</body>
+</html>

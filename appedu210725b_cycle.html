@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cycle-圖片輪播及導覽</title>
+	<link rel="stylesheet" href="css\appedu210725b.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#img_cycle").after("<div id='nav'>").cycle({
+				fx:"scrollHorz",
+				timeout:3000,
+				speed:300,
+				pause:1,
+				pager:"nav"
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div id="img_cycle">
+			<img src="img/facebook.png" alt="">
+			<!--<img src="img/instagram.png" alt="">-->
+			<!--<img src="img/twitter.png" alt="">-->
+		</div>		
+	</header>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css\public.css">
+	<link rel="stylesheet" href="css\appedu210711b.css">
+	<!-- 載入jQuery主程式 -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<!-- 使用jQuery函數 -->
+	<script type="text/javascript">
+		$(function(){
+			//隱藏子選單
+			$("#nav li ul").hide();
+			//碰到li項目時
+			$("#nav li").hover(function(){
+				//若無展示，下拉顯示子選單
+				$(">ul:not(:animated)", this).slideDown("fast");
+			},function(){
+				//游標離開時，折疊子選單
+				$(">ul", this).slideUp("fast");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="nav">
+			<ul>
+				<li class="color-blue">
+					<a href="#">Tableware</a>
+					<ul class="subs">
+						<li><a href="#">日式餐具</a>
+							<ul>
+								<li><a href="#">飯碗</a></li>
+								<li><a href="#">湯碗</a></li>
+								<li><a href="#">醬油碟</a></li>
+								<li><a href="#">小茶壺</a></li>
+								<li><a href="#">沙西米碟</a></li>
+							</ul>
+						</li>
+						<li><a href="#">西餐餐具</a></li>
+						<li><a href="#">玻璃餐具</a></li>
+						<li><a href="#">塑料餐具</a></li>
+					</ul>
+				</li>
+				<li class="color-red">
+					<a href="#">Cooking</a>
+					<ul class="subs">
+						<li><a href="#">煎鍋</a></li>
+						<li><a href="#">平底鍋</a></li>
+						<li><a href="#">炒鍋</a></li>
+						<li><a href="#">其他廚具</a></li>
+					</ul>
+				</li>
+				<li class="color-yellow">
+					<a href="#">Kitchen Fabric</a>
+					<ul class="subs">
+						<li><a href="#">餐桌布</a></li>
+						<li><a href="#">隔熱手套</a></li>
+						<li><a href="#">圍裙</a></li>
+						<li><a href="#">正經的圍裙</a></li>
+					</ul>
+				</li>
+				<li class="color-green">
+					<a href="#">Catalog</a>
+					<ul class="subs last">
+						<li><a href="#">塑料餐具目錄</a></li>
+						<li><a href="#">其他廚具目錄</a></li>
+						<li><a href="#">正經的圍裙目錄</a></li>
+						<li><a href="#">目錄的目錄</a>
+							<ul>
+								<li><a href="#">塑料餐具目錄</a></li>
+								<li><a href="#">其他廚具目錄</a></li>
+								<li><a href="#">正經的圍裙目錄</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/*控制導覽列的水平置中的位置*/
+#wrapper {
+	width: 728px;
+	margin: 50px auto;
+}
+
+/*導覽列*/
+#nav {
+	width: 728px;
+}
+
+#nav li {
+	list-style: none;
+}
+
+#nav > ul > li {
+	position: relative;
+	float: left;
+	width: 180px;
+	margin: 0 1px;
+}
+
+#nav > ul > li > a {
+	display: block;  /*行內轉區塊*/
+	height: 55px;
+	background-color: #FFF;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 55px;
+	text-align: center;
+}
+
+/*第一層上方線條顏色*/
+li.color-blue {
+	border-top: 5px solid #3FC6F3;
+}
+
+li.color-red {
+	border-top: 5px solid #FF625F;
+}
+
+li.color-yellow {
+	border-top: 5px solid #FEBD01;
+}
+
+li.color-green {
+	border-top: 5px solid #46D7C6;
+}
+
+/*子選單*/
+ul.subs {
+	position: absolute;
+	top: 110%; /*控制子選單的距離上層的位置*/
+	/*top: 100%;=margin-top: 0;*/ 
+	width: 180px;
+	background-color: #FFF;
+}
+
+ul.subs li a {
+	display: block;
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	text-indent: 22px; /*左縮排*/
+	/*如果用padding-left，右邊也會被推出22px*/
+}
+
+/*子選單顏色*/
+li ul.subs li a.hover {
+	color: #FFF;
+}
+
+li.color-blue ul.subs li a:hover {
+	background-color: #3FC6F3;
+}
+
+li.color-red ul.subs li a:hover {
+	background-color: #FF625F;
+}
+
+li.color-yellow ul.subs li a:hover {
+	background-color: #FEBD01;
+}
+
+li.color-green ul.subs li a:hover {
+	background-color: #46D7C6;
+}
+
+/*第三層*/
+ul.subs li {
+	position: relative;
+}
+
+ul.subs li ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 180px;
+}
+
+ul.subs li ul li a {
+	color: #FFF;
+}
+
+ul.last li ul {
+	left: -184px;
+}
+
+/*第三層顏色*/
+li.color-blue ul.subs ul li a {
+	background-color: #3FC6F3;
+}
+
+li.color-red ul.subs ul li a {
+	background-color: #FF625F;
+}
+
+li.color-yellow ul.subs ul li a {
+	background-color: #FEBD01;
+}
+
+li.color-green ul.subs ul li a {
+	background-color: #46D7C6;
+}
+
+li.color-blue ul.subs ul li a:hover {
+	background-color: #0D9BE5;
+}
+
+li.color-red ul.subs ul li a:hover {
+	background-color: #FD2621;
+}
+
+li.color-yellow ul.subs ul li a:hover {
+	background-color: #FF8D00;
+}
+
+li.color-green ul.subs ul li a:hover {
+	background-color: #15B59B;
+}

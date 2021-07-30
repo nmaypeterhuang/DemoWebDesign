@@ -1,0 +1,39 @@
+header {
+	/*寬高與圖片尺寸相同*/
+	width: 512px;
+	height: 512px;
+	position: relative; /*相對位置被輪播按鈕對位*/
+}
+
+header img {} /*如果圖片不同大小，可以於此控制圖片大小*/
+
+/*導覽列*/
+/*由js依圖片數量動態產生*/
+#nav {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	z-index: 9999;
+}
+
+/*滑入時的圓形鈕底色*/
+#nav a {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	color: #FFF;
+	background-color: #888;
+	text-align: center;
+	margin-left: 20px;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 8px;
+}
+
+/*被選取時的圓形鈕底色*/
+#nav a.activeSlide {
+	background-color: #FA0;
+	color: #252525;
+}

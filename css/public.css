@@ -1,0 +1,21 @@
+/*base(global)*/
+body{
+	background-color: #D8D8D8;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #465866;
+}
+
+body, div, ul, li{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #465866;
+}

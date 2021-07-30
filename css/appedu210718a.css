@@ -1,0 +1,181 @@
+/*basic*/
+body {
+	margin: 24px 10px;
+	font-family: sans-serif;
+	background-color: #D3D3D3;
+	border: red solid 2px;
+}
+img {
+	max-width: 500px;
+	height: auto;
+	border: none; /*避免舊瀏覽器邊框*/
+}
+
+/*最外框*/
+#container {
+	position: relative;
+	margin: 0 0 50px;
+	border: blue solid 2px;
+}
+
+/*頁首區*/
+#header {
+	margin: 0 0 15px;
+	border: yellow solid 2px;
+}
+
+/*LOGO*/
+#site h1 {
+	margin: 0;
+	line-height: 1;
+}
+
+/*社群分享icon*/
+#iconmenu {
+	text-align: right;
+	position: absolute; /*往上層找最近的relative去對應位置*/
+	right: 8px;
+	bottom: 6px;
+}
+#iconmenu ul {
+	margin: 0;
+	padding: 3px 0 0;
+}
+#iconmenu li {
+	display: inline;
+	list-style: none;
+}
+#iconmenu img {
+	height: 60px;
+	width: 60px;
+	position: relative;
+	right: 10px;
+}
+#iconmenu ul li:nth-child(3) img {
+	height: 48px;
+	width: 48px;
+	position: relative;
+	right: 0;
+	top: -10px;
+}
+
+/*banner*/
+#headering img {
+	vertical-align: bottom; /*去除跟選單之間的空白*/
+}
+
+/*選單*/
+#nav {
+	font-size: 14px;
+	background-color: #000;
+	overflow: hidden;
+	border-top: 1px solid #FFF;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+#nav li {
+	list-style: none;
+	float: left;
+}
+#nav li a {
+	display: block;
+	width: auto;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 20px;
+	border-right: 1px solid #FFF;
+}
+#nav li a:hover {
+	background-color: aqua;
+}
+
+/*內容區*/
+/*左側內容*/
+#content {
+	border: black solid 2px;
+}
+.date {
+	display: inline;
+	background-color: #0097D8;
+	padding: 3px 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 2.5em;
+	color: #FFF;
+}
+.date span {
+	margin-right: 2px;
+}
+#content h2 {
+	font-size: 24px;
+	border-bottom: #AAA solid 1px;
+	padding: 0 0 3px;
+}
+.cat {
+	font-size: 14px;
+	color: #666;
+}
+.cat a {
+	text-decoration: none;
+	color: #666;
+}
+#content p {
+	line-height: 1.6;
+}
+
+/*右側內容*/
+#sidebar {
+	margin: 0 0 50px;
+	border: green solid 2px;
+}
+.menu {
+	margin-bottom: 50px;
+}
+.menu h3 {
+	font-size: 26px;
+	color: #66C1E9;
+	margin: 0 0 5px;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	border-top: #AAA solid 1px;
+}
+.menu li {
+	margin-bottom: 0;
+	list-style: none;
+	border-bottom: #AAA solid 1px;
+}
+.menu li a {
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 10px 0 10px 40px;
+	color: #666;
+	background-image: url("../img/listmark.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+.menu li a:hover {
+	background-color: #37B2ED;
+}
+
+/*頁尾區*/
+#footer {
+	border: aqua solid 2px;
+	color: #FFF;
+	background-color: #000;
+	padding: 10px 10px 60px 10px;
+}
+#footer p {
+	margin: 0;
+}
+#footer small {
+	font-size: 12px;
+	font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!--https://youtu.be/uSqOomOfuq0-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>回應式排版設計</title>
+	<link rel="stylesheet" href="css/ponpon1.css">
+	<style>
+	<!--要放在html裡面，放在css裡面不會work-->
+		@media screen and (max-width:600px) {
+			.head {
+				font-size: 24px;
+			}
+			.content {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="head">自我介紹</div>
+	<div class="content">
+		<div class="box">
+			<div class="title">我的基本資料</div>
+			<div>性別男</div>
+			<div>台灣人</div>
+			<div>母胎單</div>
+		</div>
+		<div class="box">
+			<div class="title">我的個人興趣</div>
+			<div>桌遊</div>
+			<div>動畫</div>
+			<div>小說</div>
+		</div>
+		<div class="box">
+			<div class="title">我的聯絡方式</div>
+			<div>電話</div>
+			<div>電子信箱</div>
+			<div>IG</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.box{
+	position: relative;
+	width: 360px;
+	height: 200px;
+	margin: 10px;
+}
+.box img{position: absolute;}
+.box .mask{
+	position: absolute;
+	width: 360px;
+	height: 200px;
+	/*設定遮色區在最上層*/
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	line-height: 200px;
+	color: rgba(0, 0, 0, 0);
+	transition: .5s;
+}
+.box:hover .mask{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.box a{
+	color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	font-size: 2em;
+	font-family: Consolas;
+	transition: .5s;
+}
+.box:hover a{
+	color: rgba(255, 255, 255, 1);
+}
+
+.box .mask1{
+	width: 0px;
+}
+.box:hover .mask1{
+	width: 100%;
+}
+
+.box .mask2{
+	height: 0px;
+}
+.box:hover .mask2{
+	height: 100%;
+}
+
+.box .mask3{
+	transform: scale(0,0);
+}
+.box:hover .mask3{
+	transform: scale(1,1);
+}
