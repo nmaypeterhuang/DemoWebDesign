@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	width: 100%;
+	height: 45px;
+	background-color: #4D4D4D;
+	text-align: center;
+	line-height: 45px;
+	position: fixed; /*固定選單不會因為上下捲動而跑位*/
+}
+nav a {
+	color: #EEE;
+	text-decoration: none;
+	margin: 0 30px;
+}
+
+#container {
+	/*只顯示一個區塊*/
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	border: #CCC solid 2px;
+}
+
+#wrapper {
+	/*水平捲動*/
+	width: 2000px; /*總寬度 > (一個section * 個數) */
+	height: 600px;
+	/*垂直捲動*/
+	/*width: 400px; /*總寬度 > (一個section * 個數) */
+	/*height: 2500px;*/
+}
+
+#wrapper .section {
+	width: 400px;
+	height: 600px;
+	float: left;
+	border: red solid 2px;
+}
+
+#menu1 {background-color: #EE6AA6;}
+#menu2 {background-color: #5FC8FA;}
+#menu3 {background-color: #F2D766;}
+#menu4 {background-color: #c594BF;}
