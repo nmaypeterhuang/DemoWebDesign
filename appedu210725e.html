@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/masonry.pkgd.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/imagesloaded.pkgd.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#container").imagesloaded(function(){
+				$("container").masonry({
+					isFitWidth:true // 頁面左右留白相等 (頁面水平置中)
+				});
+			});
+		});
+	</script>
+	<style>
+		#container {margin: auto;}
+		.box {width: 250px;}
+		.box img {width: 250px; vertical-align: top;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="box"><img src="img/facebook.png" alt=""></div>
+		<div class="box"><img src="img/twitter.png" alt=""></div>
+		<div class="box"><img src="img/instagram.png" alt=""></div>
+	</div>
+</body>
+</html>
