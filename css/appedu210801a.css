@@ -1,0 +1,371 @@
+/*共同部分*/
+body {
+	margin: 24px 10px;
+	font-family: sans-serif;
+	background-color: #FFF;
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+}
+#header {
+	margin-bottom: 10px;
+}
+#headerpost {
+	margin-bottom: 30px
+}
+#content {
+	margin-bottom: 30px;
+}
+
+/*頁首區*/
+/*網站名稱*/
+#site {
+	float: left;
+}
+#site h1 {
+	margin: 0;
+}
+
+/*導覽列*/
+#nav {
+	float: right;
+	font-size: 22px;
+	font-family: Arail, Helvetica, sans-serif;
+	padding-top: 30px;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+#nav li {
+	list-style-type: none;
+	float: left;
+}
+#nav li a {
+	display: block;
+	float: left;
+	margin-left: 20px;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 5px solid transparent; /*為了避免hover顏色出來的時候增加高度，所以預先放好透明的色段*/
+}
+#nav li a:hover {
+	border-bottom-color: #F0F;
+}
+#headerpost {
+	clear: both;
+}
+#header {
+	overflow: hidden; /*保留內容被加大的高度*/
+}
+
+/*頁首單元區*/
+#headerpost {
+	background: linear-gradient(#000000 0%, #888888 100%);
+	background: -webkit-linear-gradient(#000000 0%, #888888 100%);
+	background-color: #333;
+	overflow: hidden;
+}
+#headerpost img {
+	float: left;
+	vertical-align: bottom;
+	width: 600px;
+}
+#headerpost #lead {
+	float: left;
+	width: 300px;
+	color: #FFF;
+	margin-left: 25px;
+}
+#headerpost h2 {
+	/*margin: 20px 0;*/
+}
+#headerpost p {
+	/*font-size: 20px;*/
+}
+#headerpost .date {
+	color: yellow;
+}
+#headerpost .more {
+	/*font-size: 18px;*/
+	font-family: Arail, Helvetica, sans-serif;
+	text-align: right;
+}
+#headerpost .more a {
+	color: #FFF;
+	background-image: url(img/more.png);
+	background-repeat: none-repeat;
+	background-position: right center;
+	/*padding: 10px 40px 10px 0;*/
+	text-decoration: none;
+	display: block; /*避免下方的內容跑上來*/
+}
+
+/*內容區*/
+.post {
+	float: left;
+	width: 216px;
+	margin-right: 30px;
+	margin-bottom: 25px;
+}
+.post:last-child {
+	margin-right: 0;
+}
+.post img {
+	width: 216px;
+	height: auto;
+	vertical-align: bottom;
+	border: none;
+}
+
+/*標題與文章*/
+.post h2 {
+	font-size: 16px;
+	margin: 5px 0;
+}
+.post p {
+	font-size: 12px;
+	margin: 10px 0;
+}
+/*日期*/
+.post .date {
+	float: left;
+	margin: 0;
+}
+/*更多按鈕*/
+.post .more_s {
+	float: right;
+	color: #FFF;
+	font-size: 14px;
+	font-family: Arail, Helvetica, sans-serif;
+	background-color: #666;
+	background-image: url(img/more_samll.png);
+	background-position: 94% 50%;
+	padding: 3px 25px 3px 5px;
+	margin: 0;
+}
+.post a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+}
+.post a:hover {
+	background-color: #CFFFB2;
+}
+#footer {
+	clear:both;
+}
+#container {
+	overflow: hidden;
+}
+
+/*頁尾區*/
+#footer {
+	font-family: Arail, Helvetica, sans-serif;
+	color: #FFF;
+	background-color: #333;
+	padding: 10px 10px 20px;
+}
+#footer p {
+	float: left;
+	margin: 0;
+}
+#footer #iconmenu ul li a img {
+	height: 60px;
+	width: 60px;
+}
+#iconmenu {
+	float: right;
+}
+#iconmenu ul {
+	margin: 0;
+	padding: 3px 0 0;
+}
+#iconmenu li {
+	display: inline;
+	list-style-type: none;
+}
+#iconmenu img {
+	border: none;
+}
+#submenu {
+	clear: both;
+}
+#submenu ul {
+	margin: 10px 0;
+	padding: 3px 0 0;
+	display: block;
+}
+#submenu li {
+	display: inline;
+	list-style-type: none;
+}
+#submenu a {
+	color: #FF0;
+	font-weight: bold;
+	border-right: 1px solid #FFF;
+	padding-right: 6px;
+	margin-right: 6px;
+	text-decoration: none;
+}
+#submenu li:last-child a {
+	border: none;
+}
+#submenu li+li+li a {
+	/*舊版ID不支援時的寫法*/
+	border: none;
+}
+small {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+}
+
+/*中尺寸*/
+@media (min-width:640px) and (max-width:979px) {
+	#container {
+		width: 620px;
+	}
+	
+	/*頁首區*/
+	#nav {
+		padding-top: 0;
+	}
+	#nav li:nth-child(2) {
+		float: none;
+		overflow: hidden;
+	}
+	
+	/*頁首單元區*/
+	#headerpost {
+		position: relative;
+	}
+	#headerpost img {
+		width: 620px;
+		float: none;
+	}
+	#headerpost #lead {
+		float: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.7);
+		width: auto;
+		padding: 10px 20px;
+		margin: 0;
+	}
+	#headerpost h2 {
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	#headerpost p {
+		font-size: 14px;
+		margin: 0 0 20px;
+	}
+	#headerpost .date {
+		float: left;
+		margin: 0;
+	}
+	#headerpost .more {
+		float: right;
+		margin: -12px 15px 0 0;
+	}
+	
+	/*內容區*/
+	.post {
+		width: 300px;
+		margin-right: 20px;
+	}
+	.post:nth-child(even) {
+		margin-right: 0;
+	}
+	.post img {
+		width: 300px;
+	}
+	.post h2 {
+		font-size: 22px;
+	}
+	.post p {
+		resize: 16px;
+	}
+	.post .more_s {
+		font-size: 18px;
+	}
+}
+
+/*小尺寸*/
+@media (max-width:639px) {
+	#container {
+		width: 300px;
+	}
+	
+	/*頁首區*/
+	#site {
+		float: none;
+	}
+	#site img {
+		width: 300px;
+		height: auto;
+	}
+	#nav {
+		float: none;
+		font-size: 14px;
+		padding-top: 6px;
+	}
+	#nav ul li a {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	
+	/*頁首單元區*/
+	#headerpost img {
+		width: 300px;
+		height: auto;
+		float: none;
+	}
+	#headerpost #lead {
+		float: none;
+		background-color: #252525;
+		width: auto;
+		padding: 30px 10px;
+		margin: 0;
+	}
+	#headerpost h2 {
+		font-size: 20px;
+		margin: 10px 0 10px 0;
+	}
+	#headerpost p {
+		font-size: 14px;
+		margin: 0 0 20px 0;
+	}
+	#headerpost .date {
+		float: left;
+		margin: 0;
+	}
+	#headerpost .more {
+		float: right;
+		margin: -12px 0 0 0;
+	}
+	
+	/*內容區*/
+	.post {
+		float: none;
+		width: 300px;
+		margin-right: 0;
+	}
+	.post img {
+		width: 300px;
+	}
+	.post h2 {
+		font-size: 22px;
+	}
+	.post p {
+		resize: 16px;
+	}
+	.post .more_s {
+		font-size: 18px;
+	}
+}
