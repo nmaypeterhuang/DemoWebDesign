@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		label{color: red;}
+		input{margin-left: 5px;margin-bottom: 5px;}
+		.lblmemo{float: left;padding-left: 50px;}
+		textarea{float: left;margin-left: 5px;}
+		fieldset{width: 300px;text-align: center;padding-top: 20px;}
+	</style>
+</head>
+<body>
+	<h1>為表單控制項貼標籤(label)</h1>
+	<form action="appedu210815b1.html" id="frm1">
+	<!--表單元素分類(群組方式)-->
+		<fieldset>
+			<legend>登入資訊</legend>
+			<label>帳號<input type="text" name="userid" required placeholder="ID"></label><br>
+			<label>密碼<input type="password" name="userpw" required placeholder="PW"></label><br>
+			<label class="lblmemo">備註</label><textarea rows="5" id="memo" placeholder="MEMO"></textarea>
+			<p><input type="submit" value="submit" id="send"></p>
+		</fieldset>
+	</form>
+	<hr>
+	<form action="appedu210815b1.html" id="frm2">
+	<!--表單元素分類(群組方式)-->
+		<fieldset>
+			<legend>登入資訊</legend>
+			<label for="uid">帳號</label><input type="text" name="userid" id="uid"><br>
+			<label for="upw">密碼</label><input type="password" name="userpw" id="upw"><br>
+			<label for="memo" class="lblmemo">備註</label><textarea rows="5" id="memo"></textarea><b
+			<p><input type="submit" value="submit"></p>
+		</fieldset>
+	</form>
+</body>
+</html>
