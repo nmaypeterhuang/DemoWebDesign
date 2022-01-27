@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表單</title>
+</head>
+<body>
+	<h1>表單</h1>
+	<ul>
+		<li>收集資訊</li>
+		<li>常見表單控制項介紹</li>
+	</ul>
+	<hr>
+	<form action="appedu210815a1.html" method="post">
+		<h2>文字類</h2>
+		<p>文字輸入(單行):文字方塊</p>
+		<input type="text" maxlength="5" size="10" name="userid" id="userid">
+		<p>密碼輸入(符號遮罩)</p>
+		<input type="password" name = "userpw" id="userpw">
+		<p>文字區塊(多行)</p>
+		<textarea name="desc" id="desc" cols="50" rows="5"></textarea>
+		<hr>
+		<h2>選擇類</h2>
+		<ul>
+			<li>單選(選項按鈕)<br>
+				<input type="radio" name="sex" value="男">男
+				<input type="radio" name="sex" value="女">女
+			</li>
+			<li>勾選(核取方塊)<br>
+				<input type="checkbox" name="hololive" value="pekora">pekora
+				<input type="checkbox" name="hololive" value="coco">coco
+				<input type="checkbox" name="hololive" value="rushia">rushia
+			</li>
+			<li>下拉選單<br>
+				<select name="subject" id="subject" multiple size="2">
+					<option value="Taipei">Taipei</option>
+					<option value="New York">New York</option>
+					<option value="Paris">Paris</option>
+				</select>
+			</li>			
+		</ul>
+		<hr>
+		<h2>檔案上傳類</h2>
+		<input type="file" name="file" id="file">
+		<hr>
+		<h2>送出按鈕</h2>
+		<input type="submit" name="send" id="send" value="SEND">
+		<hr>
+		email: <input type="email">
+		<input type="image" src="img/ayame.webp" width="10%" height="20%" value="SEND">
+	</form>
+</body>
+</html>
